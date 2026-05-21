@@ -1,1 +1,89 @@
-/* Start coding here */
+* {
+    box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #1f4056;
+      background: #ffffff;
+      font-family: "Sarabun", Arial, sans-serif;
+      border-top: 4px solid #111111;
+      border-radius: 8px;
+    }
+    
+    .site-header {
+      height: 104px;
+      padding: 36px 46px;
+      background: #9eb4c4;
+    }
+    
+    .site-header h1 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    
+    .content {
+      padding: 45px 0 48px 45px;
+    }
+    
+    .post-card {
+      width: 480px;
+      margin-bottom: 48px;
+      padding: 22px 20px 18px;
+      background: #e8edf1;
+      border: 3px solid #2e5870;
+    }
+    
+    .post-card:last-child {
+      margin-bottom: 0;
+    }
+    
+    .post-card h2 {
+      margin: 0 0 11px;
+      font-size: 17px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    
+    .image-placeholder {
+      position: relative;
+      width: 360px;
+      height: 110px;
+      margin-bottom: 12px;
+      background:
+        linear-gradient(to top right, transparent 49.5%, #b8b8b8 50%, transparent 50.5%),
+        linear-gradient(to bottom right, transparent 49.5%, #b8b8b8 50%, transparent 50.5%),
+        #f7f7f7;
+      border: 2px solid #c7c7c7;
+    }
+    
+    .post-card p {
+      margin: 0;
+      font-size: 8.8px;
+      line-height: 1.55;
+      color: #47606f;
+    }
+    
+    @media (max-width: 560px) {
+      .site-header {
+        height: 86px;
+        padding: 30px 28px;
+      }
+    
+      .content {
+        padding: 28px 20px 36px;
+      }
+    
+      .post-card {
+        width: 100%;
+      }
+    
+      .image-placeholder {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 360 / 110;
+      }
+    }
